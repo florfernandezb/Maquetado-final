@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+
+	<title>Galería Fancybox</title>
+	<link rel="stylesheet" href="interfaz/estilos.css" />
+	<style>
+		ul{ overflow: auto; margin: 0; padding: 0; list-style:none; }
+		li{ float: left; }
+	</style>
+	
+	<script src="../recursos/jquery.min.js"></script>
+	<script src="../recursos/fb/jquery.fancybox.js"></script>
+	<link rel="stylesheet" href="../recursos/fb/jquery.fancybox.css" />
+	<script>
+	$( 'li a' ).fancybox( );
+	
+	
+	
+	</script>
+</head>
+<body>
+	<div id="principal">
+		<h1>Kaiju <span>Gallery</span></h1>
+		<ul id="fotos">
+			<li><a data-rel="kaiju" href="img/kaiju/large/godzilla.jpg"><img src="img/kaiju/mini/godzilla.jpg" alt="Godzilla" /></a></li>
+			<li><a title="Motha" data-rel="kaiju" href="img/kaiju/large/mothra.jpg"><img src="img/kaiju/mini/mothra.jpg" alt="Mothra" /></a></li>
+			<li><a title="Ghidorah" data-rel="kaiju" href="img/kaiju/large/ghidorah.jpg"><img src="img/kaiju/mini/ghidorah.jpg" alt="King Ghidorah" /></a></li>
+			<li><a title="Rodan" data-rel="kaiju" href="img/kaiju/large/rodan.jpg"><img src="img/kaiju/mini/rodan.jpg" alt="Rodan" /></a></li>
+			<li><a title="Biollante" data-rel="kaiju" href="img/kaiju/large/biollante.jpg"><img src="img/kaiju/mini/biollante.jpg" alt="Biollante" /></a></li>
+		</ul>
+	</div>
+</body>
+</html>

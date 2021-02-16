@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos</title>
+    <link rel="stylesheet" href="styles.css" media="screen and (min-width:481px)"/>
+	<link rel="stylesheet" href="mobile.css" media="screen and (max-width:480px)"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <script src="res/jquery.min.js"></script>
+    <script src="res/fb/jquery.fancybox.js"></script>
+    
+    <link rel="stylesheet" href="res/fb/jquery.fancybox.css" />
+    <link rel="stylesheet" href="res/jquery-ui.css" />
+	<link rel="icon" type="image/png" href="imagenes/Home/favicon.png" />
+
+</head>
+
+<body>
+    <div >
+        <header id="eventos">
+
+            <div class="header-content">
+                <div class="header-top">
+
+                    <div >
+                        <h1><a href="index.html">Leipzig</a></h1>
+                    </div>
+
+                    <div >
+                        <nav>
+                            <ul>
+								<li><a href="index.html" id="index">Inicio</a></li>
+								<li><a href="itinerario.html" id="toDo">Qué hacer</a></li>
+								<li><a href="#" class="selected" id="events">Eventos</a></li>
+								<li><a href="reservas.html" id="reservations">Reservas</a></li>
+							</ul>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+
+        </header>
+
+        <main>
+
+            <section class="events-section">
+                <h2>¡No te lo podes perder!</h2>
+                <div class="events-row">
+
+                    <div class="card-event" id="bach">
+                        <h3><span>05/11</span> Bachfest Leipzig</h3>
+                        <p class="text">
+                            Es el festival dedicado a la música clásica llamado Bachfest Leipzig.
+                            Thomaskirche, se convierte en el lugar principal para maravillosos conciertos de música con
+                            la
+                            participación de orquestas que interpretan obras clásicas
+                        </p>
+                        <div class="eventos-img-content">
+                            <img src="imagenes/Eventos/eventos-bach.jpg" alt="" width="260" height="170" />
+                        </div>
+                        <button class="button" onclick="onButtonClick('bach')">Ver más</button>
+                    </div>
+
+                    <div class="card-event" id="gotik">
+                        <h3><span>07/11</span> Wave-Gotik-Treffen</h3>
+                        <p class="text">
+                            Es un festival anual de música y arte celebrado en Leipzig, Alemania. En él, tocan más de
+                            150
+                            bandas y artistas de diferentes géneros en varios puntos por toda la ciudad durante cuatro
+                            días
+                            en Pentecostés. El festival también alberga numerosas ferias con artículos medievales,
+                            góticos y
+                            culturales.
+                        </p>
+                        <div class="eventos-img-content">
+                            <img src="imagenes/Eventos/eventos_04.jpg" alt="" width="260" height="171" />
+                        </div>
+                        <button class="button" onclick="onButtonClick('gotik')">Ver más</button>
+                    </div>
+
+                </div>
+
+                <div class="events-row">
+                    <div class="card-event" id="highfield">
+                        <h3><span>11/11</span> Highfield</h3>
+                        <p class="text">
+                            Es el festival de rock indie más grande de Alemania del Este. Consta de tres días con
+                            conciertos
+                            en vivo de actos nacionales e internacionales. También hay mucho espacio para acampar para
+                            acomodar a los 35,000 fanáticos de HIGHFIELD de los últimos años y más allá.
+                        </p>
+                        <div class="eventos-img-content">
+                            <img src="imagenes/Eventos/eventos-highfield.jpg" alt="" width="260" height="170" />
+                        </div>
+                        <button class="button" onclick="onButtonClick('highfield')">Ver más</button>
+                    </div>
+
+                    <div class="card-event" id="jazz-event">
+                        <h3><span>20/11</span> Leipziger Jazztage</h3>
+                        <p class="text">
+                            el Leipzig Jazz Club presenta a más de 100 músicos durante diez días: grandes nombres y
+                            pioneros
+                            del jazz, así como nuevos innovadores. El festival refleja el zeitgeist del jazz: “Entre
+                            Mahler y Miles”, “Sonido de Heimat” o “Cinematic Jazz” como se llamó en los últimos años.
+                        </p>
+                        <div class="eventos-img-content">
+                            <img src="imagenes/Eventos/events-jazz.jpg" alt="" width="260" height="171" />
+                        </div>
+                        <button class="button" onclick="onButtonClick('jazz-event')">Ver más</button>
+                    </div>
+
+                    <div class="modal-container">
+
+                    </div>
+                </div>
+
+                <div>
+                    <a href="reservas.html#reservas" class="eventos-reserva">Reservá tu lugar</a>
+                </div>
+
+            </section>
+
+            <article>
+                <h3>¡No te podés perder los festivales de Leipzig!</h3>
+                <iframe width="1200" height="675" src="https://www.youtube.com/embed/q-sLJbUh210"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </article>
+
+        </main>
+
+        <footer>
+            <div class="footer-row-1">
+                <div class="footer-col">
+                    <h3 id="leipzig">Leipzig</h3>
+                    <ul class="social-media">
+                        <li ><a class="instagram" href="https://www.instagram.com/leipzigtravel/?hl=es" target="_blank">Instagram</a></li>
+                        <li ><a class="twitter" href="https://twitter.com/leipzigtravel" target="_blank">Twitter</a></li>
+                        <li ><a class="facebook" href="https://www.facebook.com/leipzigtravel" target="_blank">Facebook</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <div>
+                        <h3>Contenido</h3>
+                        <ul>
+                            <li><a href="index.html ">Inicio</a></li>
+                            <li><a href="itinerario.html">Qué hacer</a></li>
+                            <li><a href="#" class="selected">Eventos</a></li>
+                            <li><a href="reservas.html">Reservas</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <div>
+                        <h3>Legales</h3>
+                        <ul>
+                            <li>Términos de uso</li>
+                            <li>Acuerdos de Licencia</li>
+                            <li>Política de privacidad</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <div>
+                        <h3>Datos</h3>
+                        <ul>
+                            <li>Florencia Fernández Bugna</li>
+                            <li>Maquetado y desarrollo web</li>
+                            <li>Mabel García</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-row-2">
+                <p>&copy; Este sitio es una entrega para un <abbr title="Trabajo Práctico">TP</abbr> de la Escuela Da Vinci</p>
+            </div>
+        </footer>
+    </div>
+
+
+    <script>
+
+    function copy(){
+        
+    }
+
+    function onButtonClick(id) {
+        var modal = $(`.modal-container`)
+        
+        $(`#${id}`).clone().appendTo(modal)
+    
+        modal.find($(`.text`)).css('display', 'block')
+        modal.find($(`.card-event`)).css('height', 600)
+        modal.find($(`.card-event`)).css('padding', 10)
+        modal.find($(`.button`)).css('display', 'none')
+
+        modal.fancybox()
+    }
+
+    // function onButtonClick(id) {
+
+    //     $(`#${id}`).css('display', 'inline-block')
+    //     $('.text').css('display', 'block')
+    //     $(`.card-event`).css('height', 600)
+    //     $(`.card-event`).css('padding', 10)
+    //     $('.button').css('display', 'none')
+
+    //     $(`#${id}`).fancybox()
+    // }
+
+    </script>
+
+</body>
+
+</html>

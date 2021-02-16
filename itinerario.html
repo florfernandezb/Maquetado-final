@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itinerario</title>
+    <link rel="stylesheet" href="styles.css" media="screen and (min-width:481px)"/>
+	<link rel="stylesheet" href="mobile.css" media="screen and (max-width:480px)"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="imagenes/Home/favicon.png" />
+
+    <script src="res/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="itinerario-container">
+        <header id="itinerario">
+
+            <div class="header-content">
+                <div class="header-top">
+
+                    <div class="title-col-1">
+                        <h1><a href="index.html">Leipzig</a></h1>
+                    </div>
+
+                    <div class="title-col-2">
+                        <nav>
+                            <ul>
+								<li><a href="index.html"  id="index">Inicio</a></li>
+								<li><a href="#" class="selected" id="toDo">Qué hacer</a></li>
+								<li><a href="eventos.html" id="events">Eventos</a></li>
+								<li><a href="reservas.html" id="reservations">Reservas</a></li>
+							</ul>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+
+        </header>
+
+        <main>
+            <div class="nav-itinerario">
+                <button onclick="navClick()">Navegá facilmente</button>
+                <ul class="nav-itinerario-list">
+                    <li><a href="#augusts">Augustusplatz</a></li>
+                    <li><a href="#volki">Völkerschlachtdenkmal</a></li>
+                    <li><a href="#thomas">Thomaskirche</a></li>
+                    <li><a href="#altes-rathaus">Altes-Rathaus</a></li>
+                    <li><a href="#thomas">Thomaskirche</a></li>
+                </ul>
+            </div>
+            <section>
+                <div class="intro">
+                    <h2>Qué ver en Leipzig, la nueva Berlín</h2>
+                    <p>Visita uno de los Mercados Navideños más grandes de Alemania.
+                        Abre del 25 de <abbr title="noviembre">nov</abbr> al 23 de <abbr title="diciembre">dic</abbr>,
+                        sus seis áreas están ubicadas en sintonía con el
+                        fascinante paisaje histórico del centro de la ciudad de Leipzig</p>
+                </div>
+                <iframe width="1200" height="675" src="https://www.youtube.com/embed/pGZIc0Pokhs"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </section>
+
+            <section>
+
+                <ol>
+
+                    <li class="card-content">
+                        <img src="imagenes/Itinerario/itinerario_03.jpg"
+                            alt="Imagen de la plaza  Augustusplatz de Leipzig" width="772" height="477" />
+                        <div class="img-text content-right" id="augusts">
+                            <h3>Augustusplatz</h3>
+                            <p>
+                                Augustusplatz es la plaza más grande de Leipzig. Aquí puedes explorar
+                                monumentos
+                                históricos,
+                                catedrales y
+                                salas de concierto fácilmente a pie. En la plaza también se celebran <span lang="de"
+                                    id="lang">märkte, konzerte und festivals </span> durante todo
+                                el
+                                año.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="card-content">
+                        <div class="img-text content-left" id="volki">
+                            <h3>Völkerschlachtdenkmal</h3>
+                            <p>O <em>Völki como lo apodan en la ciudad. Es el monumento más importante de
+                                    Leipzig.</em> Se
+                                construyó
+                                en
+                                1913 para conmemorar los 100 años de la Batalla de las Naciones de 1813. En
+                                esta
+                                cruenta
+                                batalla
+                                se enfrentaron los ejércitos de Napoleón contra una coalición formada por:
+                                Prusia,
+                                Rusia,
+                                Suecia
+                                y Austria. Fue la primera derrota de la campaña de Napoleón.</p>
+                        </div>
+                        <img src="imagenes/Itinerario/itinerario_07.jpg"
+                            alt="Imagen del monumento de Völkerschlachtdenkmal" width="772" height="477"
+                            class="img-right" />
+                    </li>
+
+                    <li class="card-content">
+                        <img src="imagenes/Itinerario/itinerario_11.jpg"
+                            alt="Imagen de la estatua de Johan Sebastian Bach dentro de la iglesia Santo Tomás"
+                            width="772" height="477" />
+                        <div class="img-text content-right ocre" id="thomas">
+                            <h3>Thomaskirche</h3>
+                            <p>Es mundialmente famosa por su coro, que es uno de los mejores y más antiguos
+                                del
+                                mundo. El
+                                músico
+                                Johan Sebastian Bach se desempeñó como director del coro durante 27 años.
+                                Sus
+                                restos
+                                se
+                                encuentran en la iglesia y fuera hay una estatua en su memoria. Actualmente
+                                podemos
+                                escuchar
+                                al
+                                coro en sus presentaciones gratuitas o en los ensayos. Es una experiencia
+                                conmovedora.</p>
+                        </div>
+                    </li>
+
+                    <li class="card-content">
+                        <div class="img-text content-left" id="altes-rathaus">
+                            <h3>Altes-Rathaus</h3>
+                            <p>Es el antiguo ayuntamiento. Un edificio imponente que domina la plaza central
+                                de
+                                la
+                                ciudad. Fue
+                                construido en el siglo XVI y actualmente aloja el museo de la ciudad. Está
+                                en el
+                                centro de la
+                                ciudad antigua por lo que se puede tomar como referencia.</p>
+                        </div>
+                        <img src="imagenes/Itinerario/itinerario_15.jpg"
+                            alt="Imagen del antigua ayuntamiento Altes-Rathaus" width="772" height="477"
+                            class="img-right" />
+                    </li>
+
+                    <li class="card-content">
+                        <img src="imagenes/Itinerario/itinerario_04.jpg" alt="Imagen de la Ópera de Leipzig" width="772"
+                            height="477" />
+                        <div class="img-text content-right ocre">
+                            <h3>Ópera</h3>
+                            <p>Es el teatro de ópera y ballet de la ciudad de Leipzig, Alemania. Ubicada en
+                                la
+                                Augustusplatz, se inauguró el 8 de <abbr title="octubre">oct</abbr> de 1960 reemplazando al <span lang="de"
+                                    id="lang-right">Neues Theater</span>, ​ destruido en 1944
+                                durante
+                                la <abbr title="Segunda Guerra Mundial">SGM</abbr>.
+                                <cite>Antoni Ros-Marbà</cite> compositor y director de la orquesta, hizo referencia a Bach:
+                                <q>Su figura es central en la historia de la música, Bach es
+                                    el epicentro de
+                                    la música en la ópera</q>
+                            </p>
+
+                            
+                        </div>
+                    </li>
+
+                </ol>
+
+            </section>
+        </main>
+
+
+        <footer>
+            <div class="footer-row-1">
+                <div class="footer-col">
+                    <h3 id="leipzig">Leipzig</h3>
+                    <ul class="social-media">
+                        <li><a class="instagram" href="https://www.instagram.com/leipzigtravel/?hl=es"
+                                target="_blank">Instagram</a></li>
+                        <li><a class="twitter" href="https://twitter.com/leipzigtravel" target="_blank">Twitter</a></li>
+                        <li><a class="facebook" href="https://www.facebook.com/leipzigtravel"
+                                target="_blank">Facebook</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <div>
+                        <h4>Contenido</h4>
+                        <ul>
+                            <li><a href="index.html ">Inicio</a></li>
+                            <li><a href="#" class="selected">Qué hacer</a></li>
+                            <li><a href="eventos.html">Eventos</a></li>
+                            <li><a href="reservas.html">Reservas</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <div>
+                        <h4>Legales</h4>
+                        <ul>
+                            <li>Términos de uso</li>
+                            <li>Acuerdos de Licencia</li>
+                            <li>Política de privacidad</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <div>
+                        <h4>Datos</h4>
+                        <ul>
+                            <li>Florencia Fernández Bugna</li>
+                            <li>Maquetado y desarrollo web</li>
+                            <li>Mabel García</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-row-2">
+                <p>&copy; Este sitio es una entrega para un <abbr title="Trabajo Práctico">TP</abbr> de la Escuela Da
+                    Vinci</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function navClick() {
+            $(`.nav-itinerario-list`).toggle()
+        }
+    </script>
+
+</body>
+
+</html>
