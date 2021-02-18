@@ -5,8 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=480, initial-scale=1.0">
 	<title>Leipzig</title>
-	<link rel="stylesheet" href="styles.css" media="screen and (min-width:481px)"/>
-	<link rel="stylesheet" href="mobile.css" media="screen and (max-width:480px)"/>
+	<link rel="stylesheet" href="styles.css" media="screen and (min-width:481px)" />
+	<link rel="stylesheet" href="mobile.css" media="screen and (max-width:480px)" />
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com" />
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap"
@@ -55,25 +55,27 @@
 				<figure>
 					<div>
 						<div class="img-col-1">
-							<img src="imagenes/Home/home-street.jpg" alt="Imagen de una calle en Leipzig" width="380"
-								height="573" class="img-web"/>
-								<img src="imagenes/Mobile/Home/Home_05.jpg" alt="Imagen de una calle en Leipzig" width="200"
-								height="301" class="img-mobile"/>
+							<picture>
+								<source srcset="imagenes/Mobile/Home/Home_05.jpg" media="(max-width:480px)">
+								<img src="imagenes/Home/home-street.jpg" alt="Imagen de una calle en Leipzig">
+							</picture>
 						</div>
 						<div class="img-col-2">
-							<img src="imagenes/Home/home-galery.jpg" alt="Imagen de un mercado de Leipzig" width="380"
-								height="285" class="img-web"/>
-							<img src="imagenes/Mobile/Home/Home_10.jpg" alt="Imagen de un mercado de Leipzig" width="198"
-							height="149" class="img-mobile"/>
 
-							<img src="imagenes/Home/home-river.jpg" alt="Imagen del River Weisse Elster en Leipzig"
-								width="380" height="285" class="img-web"/>
-								<img src="imagenes/Home/home-river.jpg" alt="Imagen del River Weisse Elster en Leipzig"
-								width="199" height="148" class="img-mobile"/>
+							<picture>
+								<source srcset="imagenes/Mobile/Home/Home_10.jpg" media="(max-width:480px)">
+								<img src="imagenes/Home/home-galery.jpg" alt="Imagen de un mercado de Leipzig">
+							</picture>
+
+							<picture>
+								<source srcset="imagenes/Mobile/Home/Home_07.jpg" media="(max-width:480px)">
+								<img src="imagenes/Home/home-river.jpg" alt="Imagen del River Weisse Elster en Leipzig">
+							</picture>
 						</div>
 					</div>
 					<figcaption>
-						<p>Ubicada en Sajonia, <em>Leipzig es el <abbr title="principal">ppal</abbr> centro de comercio de Alemania</em>,
+						<p>Ubicada en Sajonia, <em>Leipzig es el <abbr title="principal">ppal</abbr> centro de comercio
+								de Alemania</em>,
 							originalmente fue
 							una ciudad amurallada que se ganó el sobrenombre de Pequeña París en el siglo XIX por ser un
 							centro cultural. La historia de la ciudad está conectada con la música clásica. <em>Tanto
@@ -86,36 +88,35 @@
 
 			<section class="home-what-to-do">
 				<h2>¿Qué hacer en Leipzig?</h2>
-				<p>Te presentamos los mejores puntos turísticos <b>para que tu experiencia en Leipzig sea inolvidable</b></p>
+				<p>Te presentamos los mejores puntos turísticos <b>para que tu experiencia en Leipzig sea
+						inolvidable</b></p>
 				<div class="wtd-container">
 					<a href="#" id="ant">ant</a>
 
-					<div id="img-container" class="img-web">
-						<img src="imagenes/Home/home-volki.jpg" alt="Imagen del monumento Völkerschlachtdenkmal"
-							width="620" height="475" />
-						
-						<img src="imagenes/Home/home-st-thomas.jpg" alt="Imagen de la Iglesia de Santo Tomás"
-							width="620" height="475" />
-						
-						<img src="imagenes/Home/home-christmas.jpg" alt="Imagen de la entrada del Market de Leipzig"
-							width="620" height="475" />
-						
-						<img src="imagenes/Home/home-gewandhaus.jpg" alt="Imagen del Gewandhaus de Leipzig" width="620"
-							height="475" />
-						
-					</div>
+					<div id="img-container">
 
-					
+						<picture>
+							<source srcset="imagenes/Mobile/Home/home-volki.jpg" media="(max-width:480px)">
+							<img src="imagenes/Home/home-volki.jpg" alt="Imagen del monumento Völkerschlachtdenkmal">
+						</picture>
 
-					<div id="img-container-mobile" class="img-mobile">
-						<img src="imagenes/Mobile/Home/home-volki.jpg" alt="Imagen del monumento Völkerschlachtdenkmal"
-						width="340" height="260" />
-						<img src="imagenes/Mobile/Home/home-st-thomas.jpg" alt="Imagen de la Iglesia de Santo Tomás"
-						width="340" height="260" />
-						<img src="imagenes/Mobile/Home/home-christmas.jpg" alt="Imagen de la entrada del Market de Leipzig"
-						width="340" height="260" />
-						<img src="imagenes/Mobile/Home/home-gewandhaus.jpg" alt="Imagen del Gewandhaus de Leipzig" width="340"
-						height="260" />
+						<picture>
+							<source srcset="imagenes/Mobile/Home/home-st-thomas.jpg" media="(max-width:480px)">
+							<img src="imagenes/Home/home-st-thomas.jpg" alt="Imagen de la Iglesia de Santo Tomás">
+						</picture>
+
+						<picture>
+							<source srcset="imagenes/Mobile/Home/home-christmas.jpg" media="(max-width:480px)">
+							<img src="imagenes/Home/home-christmas.jpg"
+								alt="Imagen de la entrada del Market de Leipzig">
+						</picture>
+
+						<picture>
+							<source srcset="imagenes/Mobile/Home/home-gewandhaus.jpg" media="(max-width:480px)">
+							<img src="imagenes/Home/home-gewandhaus.jpg"
+								alt="Imagen de la entrada del Market de Leipzig">
+						</picture>
+
 					</div>
 
 					<a href="#" id="sig"><abbr title="siguiente">sig</abbr></a>
@@ -185,13 +186,15 @@
 		<footer>
 			<div class="footer-row-1">
 				<div class="footer-col">
-                    <h3 id="leipzig">Leipzig</h3>
-                    <ul class="social-media">
-                        <li ><a class="instagram" href="https://www.instagram.com/leipzigtravel/?hl=es" target="_blank">Instagram</a></li>
-                        <li ><a class="twitter" href="https://twitter.com/leipzigtravel" target="_blank">Twitter</a></li>
-                        <li ><a class="facebook" href="https://www.facebook.com/leipzigtravel" target="_blank">Facebook</a></li>
-                    </ul>
-                </div>
+					<h3 id="leipzig">Leipzig</h3>
+					<ul class="social-media">
+						<li><a class="instagram" href="https://www.instagram.com/leipzigtravel/?hl=es"
+								target="_blank">Instagram</a></li>
+						<li><a class="twitter" href="https://twitter.com/leipzigtravel" target="_blank">Twitter</a></li>
+						<li><a class="facebook" href="https://www.facebook.com/leipzigtravel"
+								target="_blank">Facebook</a></li>
+					</ul>
+				</div>
 
 				<div class="footer-col">
 					<div>
@@ -228,7 +231,8 @@
 				</div>
 			</div>
 			<div class="footer-row-2">
-				<p>&copy; Este sitio es una entrega para un <abbr title="Trabajo Práctico">TP</abbr> de la Escuela Da Vinci</p>
+				<p>&copy; Este sitio es una entrega para un <abbr title="Trabajo Práctico">TP</abbr> de la Escuela Da
+					Vinci</p>
 			</div>
 		</footer>
 	</div>
