@@ -37,7 +37,7 @@ header {
 }
 
 #itinerario {
-    background-image: url(imagenes/Mobile/Itinerario/Itinerario_01.gif);
+    background-image: url(imagenes/Mobile/Itinerario/Itinerario_01.jpg);
     height: 225px;
 }
 
@@ -196,7 +196,7 @@ footer ul {
 }
 
 .img-mobile {
-    margin-left: 20px;
+    margin: auto;
     display: block !important;
 }
 
@@ -229,6 +229,14 @@ figcaption p{
     display: inline-block;
 }
 
+.img-col-1 {
+    width: fit-content;
+}
+
+.img-col-2 {
+    width: 200px;   
+}
+
 /****** HOME ABOUT ******/
 
 /****** HOME WHAT TO DO ******/
@@ -258,10 +266,6 @@ figcaption p{
 }
 
 #img-container {
-    display: none;
-}
-
-#img-container-mobile {
     display: block;
     width: fit-content;
     margin: auto;
@@ -373,10 +377,66 @@ button {
     border: 1px double #062048;
 }
 
+.transform {
+    background: no-repeat url(imagenes/Mobile/Home/chevron-down.png);
+    /* background-position-y: 3px; */
+}
+
 .nav-itinerario {
     width: 400px;
 }
 
 .nav-itinerario-list {
     display: none;
+}
+
+.intro h2{
+    text-align: center;
+    margin: auto;
+    padding: 30px;
+    font-size: 30px;
+}
+
+.intro p{
+    text-align: center;
+    margin: auto;
+    width: 400px;
+    padding-bottom: 30px;
+    font-size: 15px;
+}
+
+.card-content {
+    width: 480px;
+    padding-top: 30;
+    margin: auto;    
+}
+
+.itinerario .row-1 {
+    background-color: rgba(238, 246, 251, 0.7);
+}
+
+.content-right {
+    width: 400px;
+    height: 150px;
+    background-color: #3b6c90;
+    margin: auto;
+    padding: 10px;
+}
+
+#augusts h3 {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    
+}
+#augusts p {
+    font-size: 14px;
+    padding: 10px;
+    color: white;
+}
+
+#augusts span {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
 }

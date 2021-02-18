@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Itinerario</title>
-    <link rel="stylesheet" href="styles.css" media="screen and (min-width:481px)"/>
-	<link rel="stylesheet" href="mobile.css" media="screen and (max-width:480px)"/>
+    <link rel="stylesheet" href="styles.css" media="screen and (min-width:481px)" />
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width:480px)" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap"
         rel="stylesheet">
@@ -29,11 +29,11 @@
                     <div class="title-col-2">
                         <nav>
                             <ul>
-								<li><a href="index.html"  id="index">Inicio</a></li>
-								<li><a href="#" class="selected" id="toDo">Qué hacer</a></li>
-								<li><a href="eventos.html" id="events">Eventos</a></li>
-								<li><a href="reservas.html" id="reservations">Reservas</a></li>
-							</ul>
+                                <li><a href="index.html" id="index">Inicio</a></li>
+                                <li><a href="#" class="selected" id="toDo">Qué hacer</a></li>
+                                <li><a href="eventos.html" id="events">Eventos</a></li>
+                                <li><a href="reservas.html" id="reservations">Reservas</a></li>
+                            </ul>
                         </nav>
                     </div>
 
@@ -44,7 +44,7 @@
 
         <main>
             <div class="nav-itinerario">
-                <button onclick="navClick()">Navegá facilmente</button>
+                <button onclick="navClick()">Navegá fácilmente</button>
                 <ul class="nav-itinerario-list">
                     <li><a href="#augusts">Augustusplatz</a></li>
                     <li><a href="#volki">Völkerschlachtdenkmal</a></li>
@@ -55,7 +55,7 @@
             </div>
             <section>
                 <div class="intro">
-                    <h2>Qué ver en Leipzig, la nueva Berlín</h2>
+                    <h2>Qué ver en Leipzig</h2>
                     <p>Visita uno de los Mercados Navideños más grandes de Alemania.
                         Abre del 25 de <abbr title="noviembre">nov</abbr> al 23 de <abbr title="diciembre">dic</abbr>,
                         sus seis áreas están ubicadas en sintonía con el
@@ -63,7 +63,11 @@
                 </div>
                 <iframe width="1200" height="675" src="https://www.youtube.com/embed/pGZIc0Pokhs"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+                    allowfullscreen class="img-web"></iframe>
+
+                <iframe width="480" height="270" src="https://www.youtube.com/embed/pGZIc0Pokhs"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen class="img-mobile" style="border:0px"></iframe>
             </section>
 
             <section>
@@ -71,8 +75,12 @@
                 <ol>
 
                     <li class="card-content">
-                        <img src="imagenes/Itinerario/itinerario_03.jpg"
-                            alt="Imagen de la plaza  Augustusplatz de Leipzig" width="772" height="477" />
+                        <picture>
+                            <source srcset="imagenes/Mobile/Itinerario/Itinerario_04.jpg" media="(max-width:480px)">
+                            <img src="imagenes/Itinerario/itinerario_03.jpg"
+                                alt="Imagen de la plaza  Augustusplatz de Leipzig">
+                        </picture>
+
                         <div class="img-text content-right" id="augusts">
                             <h3>Augustusplatz</h3>
                             <p>
@@ -105,15 +113,20 @@
                                 Suecia
                                 y Austria. Fue la primera derrota de la campaña de Napoleón.</p>
                         </div>
-                        <img src="imagenes/Itinerario/itinerario_07.jpg"
-                            alt="Imagen del monumento de Völkerschlachtdenkmal" width="772" height="477"
-                            class="img-right" />
+                        <picture>
+                            <source srcset="imagenes/Mobile/Itinerario/Itinerario_07.jpg" media="(max-width:480px)">
+                            <img src="imagenes/Itinerario/itinerario_07.jpg"
+                                alt="Imagen del monumento de Völkerschlachtdenkmal">
+                        </picture>
                     </li>
 
                     <li class="card-content">
-                        <img src="imagenes/Itinerario/itinerario_11.jpg"
+                        <img src="imagenes/Itinerario/itinerario_11.jpg" class="img-web"
                             alt="Imagen de la estatua de Johan Sebastian Bach dentro de la iglesia Santo Tomás"
                             width="772" height="477" />
+                        <img src="imagenes/Mobile/Itinerario/Itinerario_10.jpg" class="img-mobile"
+                            alt="Imagen de la estatua de Johan Sebastian Bach dentro de la iglesia Santo Tomás"
+                            width="439" height="293" />
                         <div class="img-text content-right ocre" id="thomas">
                             <h3>Thomaskirche</h3>
                             <p>Es mundialmente famosa por su coro, que es uno de los mejores y más antiguos
@@ -145,29 +158,34 @@
                                 centro de la
                                 ciudad antigua por lo que se puede tomar como referencia.</p>
                         </div>
-                        <img src="imagenes/Itinerario/itinerario_15.jpg"
-                            alt="Imagen del antigua ayuntamiento Altes-Rathaus" width="772" height="477"
-                            class="img-right" />
+
+                        <picture>
+                            <source srcset="imagenes/Mobile/Itinerario/Itinerario_13.jpg" media="(max-width:480px)">
+                            <img src="imagenes/Itinerario/itinerario_15.jpg"
+                                alt="Imagen del antigua ayuntamiento Altes-Rathaus">
+                        </picture>
                     </li>
 
                     <li class="card-content">
-                        <img src="imagenes/Itinerario/itinerario_04.jpg" alt="Imagen de la Ópera de Leipzig" width="772"
-                            height="477" />
+                        <picture>
+                            <source srcset="imagenes/Mobile/Itinerario/Itinerario_15.jpg" media="(max-width:480px)">
+                            <img src="imagenes/Itinerario/itinerario_04.jpg" alt="Imagen de la Ópera de Leipzig">
+                        </picture>
+
                         <div class="img-text content-right ocre">
                             <h3>Ópera</h3>
                             <p>Es el teatro de ópera y ballet de la ciudad de Leipzig, Alemania. Ubicada en
                                 la
-                                Augustusplatz, se inauguró el 8 de <abbr title="octubre">oct</abbr> de 1960 reemplazando al <span lang="de"
-                                    id="lang-right">Neues Theater</span>, ​ destruido en 1944
+                                Augustusplatz, se inauguró el 8 de <abbr title="octubre">oct</abbr> de 1960 reemplazando
+                                al <span lang="de" id="lang-right">Neues Theater</span>, ​ destruido en 1944
                                 durante
                                 la <abbr title="Segunda Guerra Mundial">SGM</abbr>.
-                                <cite>Antoni Ros-Marbà</cite> compositor y director de la orquesta, hizo referencia a Bach:
+                                <cite>Antoni Ros-Marbà</cite> compositor y director de la orquesta, hizo referencia a
+                                Bach:
                                 <q>Su figura es central en la historia de la música, Bach es
                                     el epicentro de
                                     la música en la ópera</q>
                             </p>
-
-                            
                         </div>
                     </li>
 
@@ -235,6 +253,7 @@
     <script>
         function navClick() {
             $(`.nav-itinerario-list`).toggle()
+            $(`.nav-itinerario-list`).addClass("transform");
         }
     </script>
 
