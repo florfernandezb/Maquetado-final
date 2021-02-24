@@ -107,7 +107,7 @@ footer ul {
 
 .footer-col div:first-child {
     width: 1040px;
-    height: 195px;
+    height: 120px;
     margin: auto;
 }
 
@@ -362,7 +362,7 @@ button {
 }
 
 .intro {
-    height: 66px;
+    height: 100px;
     width: 750px;
     text-align: center;
     margin: auto;
