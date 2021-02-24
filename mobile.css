@@ -103,6 +103,11 @@ nav li{
     filter: hue-rotate(700deg) saturate(600%);
 }
 
+iframe {
+    width: 100%;
+    height: 270px;
+}
+
 /***************************** HEADER *****************************/
 
 /***************************** FOOTER *****************************/
@@ -215,7 +220,7 @@ figcaption{
     width: 350px;
     height: 166px;
     position: relative;
-    margin-top: -76px;
+    margin-top: -50px;
 }
 
 figcaption p{
@@ -252,23 +257,32 @@ figcaption p{
     display: inline-block;
 }
 
+.home-what-to-do {
+    width: 100%;
+}
+
 #ant {
     background: no-repeat url(imagenes/Mobile/Home/chevron-izq.png);
     font-size: 0px;
     height: 30px;
     width: 30px;
     display: inline-block;
+    vertical-align: middle;
 } 
 
-.wtd-container div {
+.wtd-container {
     display: inline-block;
     vertical-align: middle;
+    width: 410px;
+    margin-left: 15px;
+    padding: 20px;
 }
 
 #img-container {
-    display: block;
-    width: fit-content;
+    display: inline-block;
+    width: 340px;
     margin: auto;
+    vertical-align: middle;
 }
 
 #sig {
@@ -277,6 +291,7 @@ figcaption p{
     height: 30px;
     width: 30px;
     display: inline-block;
+    vertical-align: middle;
 } 
 
 /****** HOME WHAT TO DO ******/
@@ -366,20 +381,13 @@ figcaption p{
 
 /***************************** ITINERARIO *****************************/
 button {
-    background: no-repeat url(imagenes/Mobile/Home/chevron-der.png);
-    background-position-y: 3px;
     width: 200px;
     text-decoration: none;
     font-family: helvetica;
     font-size: 15px;
-    border-radius: 3px;
+    border-radius: 2px;
     padding: 5px;
-    border: 1px double #062048;
-}
-
-.transform {
-    background: no-repeat url(imagenes/Mobile/Home/chevron-down.png);
-    /* background-position-y: 3px; */
+    border: 0px ;
 }
 
 .nav-itinerario {
@@ -393,7 +401,7 @@ button {
 .intro h2{
     text-align: center;
     margin: auto;
-    padding: 30px;
+    padding: 20px;
     font-size: 30px;
 }
 
@@ -407,8 +415,9 @@ button {
 
 .card-content {
     width: 480px;
-    padding-top: 30;
-    margin: auto;    
+    padding-top: 30px;
+    margin: auto;
+    text-align: center;    
 }
 
 .itinerario .row-1 {
@@ -421,14 +430,15 @@ button {
     background-color: #3b6c90;
     margin: auto;
     padding: 10px;
+    position: relative;
+    margin-top: -20px;
 }
 
 #augusts h3 {
-    font-size: 20px;
     color: white;
     text-align: center;
-    
 }
+
 #augusts p {
     font-size: 14px;
     padding: 10px;
@@ -440,3 +450,195 @@ button {
     font-weight: bold;
     color: white;
 }
+
+.content-left {
+    width: 400px;
+    height: 160px;
+    font-size: 15px;
+    padding: 10px;
+    background-color:#dcdcdc;
+    position: relative;
+    margin: auto;
+}
+
+.img-text {
+    text-align: center;
+}
+
+.img-text h3 {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.img-up img{
+    margin-top: -35px;
+}
+
+#volki {
+    height: 180px;
+}
+
+#thomas, #opera {
+    background-color: #d3cbbc;
+    font-size: 15px;
+    width: 400px;
+    height: 200px;
+    position: relative;
+    margin-top: -20px;
+}
+
+#opera {
+    margin-top: -50px;
+}
+
+#lang-right {
+    font-size: 15px;
+    color: #062048;
+}
+
+/***************************** ITINERARIO *****************************/
+
+/***************************** EVENTOS *****************************/
+
+.events-section h2 {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 30px;
+}
+
+.events-row {
+    width: 380px;
+    margin: auto;
+}
+
+.card-event {
+    width: 380px;
+    height: 320px;
+    border-radius: 1px;
+    margin: 20px 0px;
+    box-shadow: 5px 5px 5px 5px rgb(205 204 205 / 50%);
+    display: inline-block !important;
+    vertical-align: top;
+}
+
+.card-event p {
+    display: none;
+    width: 220px;
+    height: fit-content;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.eventos-img-content {
+    margin: auto;
+    width: fit-content;
+}
+
+.card-event h3 {
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    padding: 20px
+}
+
+.card-event a {
+    float: right;
+    padding: 20px;
+}
+
+.button, .eventos-reserva {
+    background-color: #eef6fb;
+    float: right;
+    border-radius: 2px;
+    border: none;
+    margin: 10px;
+    padding: 5px;
+  }
+
+.eventos-reserva {
+    float: right;
+    background-color: #062048; 
+    color: #eef6fb;
+    padding: 5px;
+    margin: 20px;
+}
+
+article {
+    width: 480px;
+    margin-top: 50px;
+}
+
+article h3 {
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/***************************** EVENTOS *****************************/
+
+/***************************** RESERVAS *****************************/
+
+#reservas {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+form {
+    width: 480px;
+    font-size: 15px;
+    height: fit-content;
+    margin: auto;
+}
+
+.form-container {
+    padding: 30px 25px 50px 25px;
+    width: 400px;
+    box-shadow: 5px 5px 5px 5px rgb(205 204 205 / 50%);
+    background-color: #eef6fb;
+    margin: auto;
+}
+
+.form-item {
+    padding: 10px;
+}
+
+.form-item label {
+    display: inline-block;
+    width: 200px;
+}
+
+#radio-button {
+    width: 75px;
+}
+
+#upload {
+    padding-top: 15px;
+}
+
+/***************************** RESERVAS *****************************/
+
+/***************************** THANKS *****************************/
+
+.thanks {
+    width: 480px;
+    text-align: center;
+}
+
+.thanks div {
+    width: 480px;
+    margin: auto;
+    padding: 150px 0px;
+    background-color: #eef6fb;
+}
+
+.thanks h2{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.thanks p {
+    font-size: 20px;
+    padding: 10px;
+}
+/***************************** THANKS *****************************/
+

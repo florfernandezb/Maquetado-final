@@ -5,38 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eventos</title>
-    <link rel="stylesheet" href="styles.css" media="screen and (min-width:481px)"/>
-	<link rel="stylesheet" href="mobile.css" media="screen and (max-width:480px)"/>
+    <link rel="stylesheet" href="styles.css" media="screen and (min-width:481px)" />
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width:480px)" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
 
     <script src="res/jquery.min.js"></script>
     <script src="res/fb/jquery.fancybox.js"></script>
-    
+
     <link rel="stylesheet" href="res/fb/jquery.fancybox.css" />
     <link rel="stylesheet" href="res/jquery-ui.css" />
-	<link rel="icon" type="image/png" href="imagenes/Home/favicon.png" />
+    <link rel="icon" type="image/png" href="imagenes/Home/favicon.png" />
 
 </head>
 
 <body>
-    <div >
+    <div>
         <header id="eventos">
 
             <div class="header-content">
                 <div class="header-top">
 
-                    <div >
+                    <div>
                         <h1><a href="index.html">Leipzig</a></h1>
                     </div>
 
-                    <div >
+                    <div>
                         <nav>
                             <ul>
-								<li><a href="index.html" id="index">Inicio</a></li>
-								<li><a href="itinerario.html" id="toDo">Qué hacer</a></li>
-								<li><a href="#" class="selected" id="events">Eventos</a></li>
-								<li><a href="reservas.html" id="reservations">Reservas</a></li>
-							</ul>
+                                <li><a href="index.html" id="index">Inicio</a></li>
+                                <li><a href="itinerario.html" id="toDo">Qué hacer</a></li>
+                                <li><a href="#" class="selected" id="events">Eventos</a></li>
+                                <li><a href="reservas.html" id="reservations">Reservas</a></li>
+                            </ul>
                         </nav>
                     </div>
 
@@ -118,9 +118,7 @@
                     </div>
                 </div>
 
-                <div>
-                    <a href="reservas.html#reservas" class="eventos-reserva">Reservá tu lugar</a>
-                </div>
+                <a href="reservas.html#reservas" class="eventos-reserva">Reservá tu lugar</a>
 
             </section>
 
@@ -138,9 +136,11 @@
                 <div class="footer-col">
                     <h3 id="leipzig">Leipzig</h3>
                     <ul class="social-media">
-                        <li ><a class="instagram" href="https://www.instagram.com/leipzigtravel/?hl=es" target="_blank">Instagram</a></li>
-                        <li ><a class="twitter" href="https://twitter.com/leipzigtravel" target="_blank">Twitter</a></li>
-                        <li ><a class="facebook" href="https://www.facebook.com/leipzigtravel" target="_blank">Facebook</a></li>
+                        <li><a class="instagram" href="https://www.instagram.com/leipzigtravel/?hl=es"
+                                target="_blank">Instagram</a></li>
+                        <li><a class="twitter" href="https://twitter.com/leipzigtravel" target="_blank">Twitter</a></li>
+                        <li><a class="facebook" href="https://www.facebook.com/leipzigtravel"
+                                target="_blank">Facebook</a></li>
                     </ul>
                 </div>
 
@@ -179,7 +179,8 @@
                 </div>
             </div>
             <div class="footer-row-2">
-                <p>&copy; Este sitio es una entrega para un <abbr title="Trabajo Práctico">TP</abbr> de la Escuela Da Vinci</p>
+                <p>&copy; Este sitio es una entrega para un <abbr title="Trabajo Práctico">TP</abbr> de la Escuela Da
+                    Vinci</p>
             </div>
         </footer>
     </div>
@@ -187,33 +188,23 @@
 
     <script>
 
-    function copy(){
-        
-    }
+        function onButtonClick(id) {
 
-    function onButtonClick(id) {
-        var modal = $(`.modal-container`)
-        
-        $(`#${id}`).clone().appendTo(modal)
-    
-        modal.find($(`.text`)).css('display', 'block')
-        modal.find($(`.card-event`)).css('height', 600)
-        modal.find($(`.card-event`)).css('padding', 10)
-        modal.find($(`.button`)).css('display', 'none')
+            $(`#${id}`).css('display', 'inline-block')
+            $('.text').css('display', 'block')
+            $(`.card-event`).css('height', 600)
+            $(`.card-event`).css('padding', 10)
+            $('.button').css('display', 'none')
 
-        modal.fancybox()
-    }
-
-    // function onButtonClick(id) {
-
-    //     $(`#${id}`).css('display', 'inline-block')
-    //     $('.text').css('display', 'block')
-    //     $(`.card-event`).css('height', 600)
-    //     $(`.card-event`).css('padding', 10)
-    //     $('.button').css('display', 'none')
-
-    //     $(`#${id}`).fancybox()
-    // }
+            $(`#${id}`).fancybox({
+                afterClose: function () {
+                    $(`.card-event`).css('display', 'inline-block')
+                    $(`.card-event p`).css('display', 'none')
+                    $(`.card-event`).css('height', 'fit-content')
+                    $('.button').css('display', 'block')
+                }
+            })
+        }
 
     </script>
 

@@ -44,7 +44,7 @@
 
         <main>
             <div class="nav-itinerario">
-                <button onclick="navClick()">Navegá fácilmente</button>
+                <button onclick="displayMenu()">Navegá fácilmente</button>
                 <ul class="nav-itinerario-list">
                     <li><a href="#augusts">Augustusplatz</a></li>
                     <li><a href="#volki">Völkerschlachtdenkmal</a></li>
@@ -61,13 +61,10 @@
                         sus seis áreas están ubicadas en sintonía con el
                         fascinante paisaje histórico del centro de la ciudad de Leipzig</p>
                 </div>
-                <iframe width="1200" height="675" src="https://www.youtube.com/embed/pGZIc0Pokhs"
+                    <iframe width="1200" height="675" src="https://www.youtube.com/embed/pGZIc0Pokhs"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen class="img-web"></iframe>
-
-                <iframe width="480" height="270" src="https://www.youtube.com/embed/pGZIc0Pokhs"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen class="img-mobile" style="border:0px"></iframe>
+                    allowfullscreen></iframe>
+                
             </section>
 
             <section>
@@ -113,20 +110,20 @@
                                 Suecia
                                 y Austria. Fue la primera derrota de la campaña de Napoleón.</p>
                         </div>
-                        <picture>
+                        <picture class="img-up">
                             <source srcset="imagenes/Mobile/Itinerario/Itinerario_07.jpg" media="(max-width:480px)">
                             <img src="imagenes/Itinerario/itinerario_07.jpg"
-                                alt="Imagen del monumento de Völkerschlachtdenkmal">
+                                alt="Imagen del monumento de Völkerschlachtdenkmal" />
                         </picture>
                     </li>
 
                     <li class="card-content">
-                        <img src="imagenes/Itinerario/itinerario_11.jpg" class="img-web"
-                            alt="Imagen de la estatua de Johan Sebastian Bach dentro de la iglesia Santo Tomás"
-                            width="772" height="477" />
-                        <img src="imagenes/Mobile/Itinerario/Itinerario_10.jpg" class="img-mobile"
-                            alt="Imagen de la estatua de Johan Sebastian Bach dentro de la iglesia Santo Tomás"
-                            width="439" height="293" />
+
+                        <picture>
+                            <source srcset="imagenes/Mobile/Itinerario/Itinerario_10.jpg" media="(max-width:480px)" />
+                            <img src="imagenes/Itinerario/itinerario_11.jpg" alt="Imagen de la estatua de Johan Sebastian Bach dentro de la iglesia Santo Tomás" >
+                        </picture>
+
                         <div class="img-text content-right ocre" id="thomas">
                             <h3>Thomaskirche</h3>
                             <p>Es mundialmente famosa por su coro, que es uno de los mejores y más antiguos
@@ -159,7 +156,7 @@
                                 ciudad antigua por lo que se puede tomar como referencia.</p>
                         </div>
 
-                        <picture>
+                        <picture class="img-up">
                             <source srcset="imagenes/Mobile/Itinerario/Itinerario_13.jpg" media="(max-width:480px)">
                             <img src="imagenes/Itinerario/itinerario_15.jpg"
                                 alt="Imagen del antigua ayuntamiento Altes-Rathaus">
@@ -172,7 +169,7 @@
                             <img src="imagenes/Itinerario/itinerario_04.jpg" alt="Imagen de la Ópera de Leipzig">
                         </picture>
 
-                        <div class="img-text content-right ocre">
+                        <div class="img-text content-right ocre" id="opera">
                             <h3>Ópera</h3>
                             <p>Es el teatro de ópera y ballet de la ciudad de Leipzig, Alemania. Ubicada en
                                 la
@@ -251,9 +248,8 @@
     </div>
 
     <script>
-        function navClick() {
+        function displayMenu() {
             $(`.nav-itinerario-list`).toggle()
-            $(`.nav-itinerario-list`).addClass("transform");
         }
     </script>
 
