@@ -185,7 +185,7 @@ figcaption p{
 }
 
 figure > div {
-    width: fit-content;
+    width: 765px;
     margin: auto;
 }
 
