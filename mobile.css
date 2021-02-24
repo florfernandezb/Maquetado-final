@@ -145,8 +145,8 @@ footer ul {
 }
 
 .footer-col div:first-child {
-    width: fit-content;
-    height: fit-content;
+    width: 480px;
+    height: 130px;
     margin: auto;
 }
 
@@ -210,7 +210,7 @@ footer ul {
 }
 
 figure > div {
-    width: fit-content;
+    width: 400px;
     margin: auto;
 }
 
@@ -524,14 +524,14 @@ button {
 .card-event p {
     display: none;
     width: 220px;
-    height: fit-content;
+    height: 220px;
     margin: auto;
     padding-bottom: 20px;
 }
 
 .eventos-img-content {
     margin: auto;
-    width: fit-content;
+    width: 260px;
 }
 
 .card-event h3 {
@@ -586,7 +586,7 @@ article h3 {
 form {
     width: 480px;
     font-size: 15px;
-    height: fit-content;
+    height: 590px;
     margin: auto;
 }
 
