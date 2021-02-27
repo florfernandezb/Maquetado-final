@@ -145,7 +145,6 @@ footer ul {
 }
 
 .footer-col div:first-child {
-    height: 130px;
     margin: auto;
 }
 
@@ -506,7 +505,7 @@ button {
 }
 
 .events-row {
-    width: 380px;
+    width: 385px;
     margin: auto;
 }
 
@@ -585,7 +584,7 @@ article h3 {
 form {
     width: 480px;
     font-size: 15px;
-    height: 590px;
+    height: 550px;
     margin: auto;
 }
 
@@ -603,15 +602,18 @@ form {
 
 .form-item label {
     display: inline-block;
-    width: 200px;
+    width: 150px;
 }
 
 #radio-button {
-    width: 75px;
+    width: 60px;
+    vertical-align: top;
+    margin: 20px;
 }
 
 #upload {
-    padding-top: 15px;
+    vertical-align: top;
+    width: 200px;
 }
 
 /***************************** RESERVAS *****************************/
