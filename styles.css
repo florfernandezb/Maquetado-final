@@ -30,6 +30,7 @@ a:hover, .selected {
 legend {
     text-align: center;
 }
+
 /***************************** GENERIC *****************************/
 
 /***************************** HEADER *****************************/
@@ -152,6 +153,7 @@ footer ul {
     width: 580px;
     margin: 30px auto;
     font-size: 19px;
+    text-align: center;
 }
 
 .img-web {
@@ -493,7 +495,7 @@ ol {
 }
 
 .events-row {
-    width: 380px;
+    width: 900px;
     margin: auto;
     padding: 20px;
 }
@@ -507,7 +509,6 @@ ol {
     display: inline-block !important;
     vertical-align: top;
 }
-
 .card-event p {
     display: none;
     width: 220px;
@@ -559,10 +560,6 @@ ol {
     color: #eef6fb;
     padding: 5px;
     margin: 20px;
-  }
-
-  article {
-      margin: 100px 0px;
   }
 
   article h3 {
