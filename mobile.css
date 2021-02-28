@@ -1,32 +1,9 @@
 *{
-    max-width: 480px;
-    margin: 0px;
-    padding: 0px;
-    color: #062048;
-    font-family: 'Open Sans', sans-serif;
-    
+    max-width: 480px;  
 }
+
 body{
     width: 480px;
-    margin: auto;
-}
-
-em{
-    font-weight: bold;
-}
-
-span {
-    font-size: 40px;
-    font-weight: bold;
-}
-
-a{
-    text-decoration: none;
-}
-
-
-legend {
-    text-align: center;
 }
 
 /***************************** HEADER *****************************/
@@ -46,17 +23,9 @@ header {
     height: 225px;
 }
 
-.header-content {
-    height: 60px;
-    margin: auto;
-    background-color: rgba(238, 246, 251, 0.7);
-}
 
 h1 a{
-    font-family: 'Roboto', sans-serif;
     font-size: 25px;
-    text-transform: uppercase;
-    font-weight: lighter;
     margin: 15px 20px;
     float: left;
 }
@@ -70,7 +39,7 @@ h1 a{
 }
 
 nav li{
-    display: inline-block;
+    
     width: 20px;
     height: 20px;
     margin: 0 10px;
@@ -115,18 +84,11 @@ iframe {
 #leipzig {
     background: no-repeat url(imagenes/Mobile/Home/footer-leipzig.jpg);
     height: 25px;
-    width: 202px;
-    font-size: 0px;
 }
 
 .footer-row-1 {
     width: 440px;
     margin: 30px 20px;
-}
-
-.footer-row-2 {
-    text-align: center;
-    background-color: #d3cbbc;
     padding: 10px;
 }
 
@@ -135,17 +97,7 @@ iframe {
 }
 
 .footer-col{
-    display: inline-block;
     width: 106px;
-    vertical-align: top;
-}
-
-footer ul {
-    list-style: none;
-}
-
-.footer-col div:first-child {
-    margin: auto;
 }
 
 .footer-col h3 {
@@ -157,17 +109,13 @@ footer ul {
     font-size: 8px;
 }
 
-.social-media li {
-    display: inline-block;
-    margin-top: 17px;
+.footer-col div:first-child {
+    height: 100px;
 }
 
 .social-media a{
-    display: inline-block;
-    font-size: 0px;
     width: 20px;
     height: 20px;
-    vertical-align: top;
     margin-left: 10px;
     background-image: url(imagenes/Home/sprite-20px.jpg);
 }
@@ -188,14 +136,14 @@ footer ul {
 /****** ABOUT ******/
 .about h2 {
     text-align: center;
-    padding-top: 30px;
     font-size: 30px;
+    padding-top: 30px;
 }
 
 .section-description{
     margin: 30px auto;
-    font-size: 15px;
     text-align: center;
+    font-size: 15px;
 }
 
 .img-mobile {
@@ -213,28 +161,20 @@ figure > div {
 }
 
 figcaption{
-    margin: auto;
-    background-color: #d3cbbc;
     width: 350px;
-    height: 166px;
-    position: relative;
     margin-top: -50px;
 }
 
 figcaption p{
     margin: auto;
+    font-weight: lighter;
     padding: 20px;
     font-size: 13px;
-    font-weight: lighter;
 }
 
-.img-col-1, .img-col-2 {
-    display: inline-block;
-}
-
-.img-col-1 {
+/* .img-col-1 {
     width: fit-content;
-}
+} */
 
 .img-col-2 {
     width: 200px;   
@@ -243,14 +183,9 @@ figcaption p{
 /****** HOME ABOUT ******/
 
 /****** HOME WHAT TO DO ******/
-.home-what-to-do h2 {
-    text-align: center;
-    padding-top: 40px;
-    font-size: 30px;
-}
+
 
 .home-what-to-do p {
-    text-align: center;
     padding: 10px;
     display: inline-block;
 }
@@ -261,10 +196,6 @@ figcaption p{
 
 #ant {
     background: no-repeat url(imagenes/Mobile/Home/chevron-izq.png);
-    font-size: 0px;
-    height: 30px;
-    width: 30px;
-    display: inline-block;
     vertical-align: middle;
 } 
 
@@ -278,9 +209,9 @@ figcaption p{
 
 #img-container {
     display: inline-block;
+    vertical-align: middle;
     width: 340px;
     margin: auto;
-    vertical-align: middle;
 }
 
 #sig {
@@ -352,9 +283,6 @@ figcaption p{
 }
 
 .home-events-col-2 {
-    display: inline-block;
-    border-left: 1px solid #062048;
-    text-align: left;
     padding: 5px 10px;
     width: 400px;
     height: 60px;
@@ -368,7 +296,6 @@ figcaption p{
 }
 
 .ver-mas a {
-    display: inline-block;
     width: 20px;
     height: 20px;   
     background: no-repeat url(imagenes/Mobile/Home/chevron-der.png);
@@ -378,22 +305,10 @@ figcaption p{
 /***************************** HOME *****************************/
 
 /***************************** ITINERARIO *****************************/
-button {
-    width: 200px;
-    text-decoration: none;
-    font-family: helvetica;
-    font-size: 15px;
-    border-radius: 2px;
-    padding: 5px;
-    border: 0px ;
-}
+
 
 .nav-itinerario {
     width: 400px;
-}
-
-.nav-itinerario-list {
-    display: none;
 }
 
 .intro h2{
@@ -412,29 +327,18 @@ button {
 }
 
 .card-content {
-    width: 480px;
     padding-top: 30px;
     margin: auto;
+    width: 480px;
     text-align: center;    
-}
-
-.itinerario .row-1 {
-    background-color: rgba(238, 246, 251, 0.7);
 }
 
 .content-right {
     width: 400px;
     height: 150px;
-    background-color: #3b6c90;
     margin: auto;
-    padding: 10px;
     position: relative;
     margin-top: -20px;
-}
-
-#augusts h3 {
-    color: white;
-    text-align: center;
 }
 
 #augusts p {
@@ -452,9 +356,6 @@ button {
 .content-left {
     width: 400px;
     height: 160px;
-    font-size: 15px;
-    padding: 10px;
-    background-color:#dcdcdc;
     position: relative;
     margin: auto;
 }
@@ -489,69 +390,20 @@ button {
     margin-top: -50px;
 }
 
-#lang-right {
-    font-size: 15px;
-    color: #062048;
-}
+
 
 /***************************** ITINERARIO *****************************/
 
 /***************************** EVENTOS *****************************/
 
 .events-section h2 {
-    text-align: center;
     padding-top: 30px;
-    font-size: 30px;
 }
 
 .events-row {
     width: 385px;
-    margin: auto;
 }
 
-.card-event {
-    width: 380px;
-    height: 320px;
-    border-radius: 1px;
-    margin: 20px 0px;
-    box-shadow: 5px 5px 5px 5px rgb(205 204 205 / 50%);
-    display: inline-block !important;
-    vertical-align: top;
-}
-
-.card-event p {
-    display: none;
-    width: 220px;
-    height: 220px;
-    margin: auto;
-    padding-bottom: 20px;
-}
-
-.eventos-img-content {
-    margin: auto;
-    width: 260px;
-}
-
-.card-event h3 {
-    font-size: 20px;
-    font-style: italic;
-    text-align: center;
-    padding: 20px
-}
-
-.card-event a {
-    float: right;
-    padding: 20px;
-}
-
-.button, .eventos-reserva {
-    background-color: #eef6fb;
-    float: right;
-    border-radius: 2px;
-    border: none;
-    margin: 10px;
-    padding: 5px;
-  }
 
 .eventos-reserva {
     float: right;
@@ -566,34 +418,19 @@ article {
     margin-top: 50px;
 }
 
-article h3 {
-    padding: 30px;
-    font-size: 20px;
-    text-align: center;
-}
-
 /***************************** EVENTOS *****************************/
 
 /***************************** RESERVAS *****************************/
-
-#reservas {
-    text-align: center;
-    padding-bottom: 20px;
-}
 
 form {
     width: 480px;
     font-size: 15px;
     height: 550px;
-    margin: auto;
 }
 
 .form-container {
     padding: 30px 25px 50px 25px;
     width: 400px;
-    box-shadow: 5px 5px 5px 5px rgb(205 204 205 / 50%);
-    background-color: #eef6fb;
-    margin: auto;
 }
 
 .form-item {
@@ -627,19 +464,7 @@ form {
 
 .thanks div {
     width: 480px;
-    margin: auto;
-    padding: 150px 0px;
-    background-color: #eef6fb;
 }
 
-.thanks h2{
-    text-transform: uppercase;
-    font-size: 30px;
-}
-
-.thanks p {
-    font-size: 20px;
-    padding: 10px;
-}
 /***************************** THANKS *****************************/
 

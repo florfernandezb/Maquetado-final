@@ -1,34 +1,11 @@
 /***************************** GENERIC *****************************/
-*{
-    margin: 0px;
-    padding: 0px;
-    color: #062048;
-    font-family: 'Open Sans', sans-serif;
-}
+
 body{
     width: 1200px;
-    margin: auto;
-}
-
-em{
-    font-weight: bold;
-}
-
-span {
-    font-size: 40px;
-    font-weight: bold;
-}
-
-a{
-    text-decoration: none;
 }
 
 a:hover, .selected {
     filter: hue-rotate(700deg) saturate(600%);
-}
-
-legend {
-    text-align: center;
 }
 
 /***************************** GENERIC *****************************/
@@ -40,12 +17,6 @@ header{
     height: 539px;
     background-image: url(imagenes/Home/home-header.jpg);
 }
-
-.header-content{
-    height: 60px;
-    margin: auto;
-    background-color: rgba(238, 246, 251, 0.7);
-} 
   
 .header-top{
     width: 960px;
@@ -57,10 +28,7 @@ header{
 }
 
 h1 a{
-    font-family: 'Roboto', sans-serif;
     font-size: 50px;
-    text-transform: uppercase;
-    font-weight: lighter;
 }
 
 .header-top div:last-child{
@@ -68,7 +36,6 @@ h1 a{
 }
 
 nav li{
-    display: inline-block;
     padding: 7px;
     margin: 10px;
 }
@@ -80,8 +47,6 @@ nav li{
 #leipzig {
     background-image: url(imagenes/Home/home-leipzig.jpg);
     height: 46px;
-    width: 202px;
-    font-size: 0px;
 }
 
 .footer-row-1 {
@@ -90,39 +55,18 @@ nav li{
     margin: auto;
 }
 
-.footer-row-2 {
-    text-align: center;
-    background-color: #d3cbbc;
-    padding: 10px;
-}
-
 .footer-col{
-    display: inline-block;
     width: 230px;
-    vertical-align: top;
-}
-
-footer ul {
-    list-style: none;
 }
 
 .footer-col div:first-child {
     width: 1040px;
     height: 120px;
-    margin: auto;
-}
-
-.social-media li {
-    display: inline-block;
-    margin-top: 17px;
 }
 
 .social-media a{
-    display: inline-block;
-    font-size: 0px;
     width: 30px;
     height: 30px;
-    vertical-align: top;
     margin-left: 20px;
     background-image: url(imagenes/Home/sprite-30px.jpg);
 }
@@ -144,16 +88,12 @@ footer ul {
 
 /****** HOME ABOUT ******/
 .about h2 {
-    text-align: center;
     padding-top: 40px;
-    font-size: 30px;
 }
 
 .section-description{
     width: 580px;
-    margin: 30px auto;
     font-size: 19px;
-    text-align: center;
 }
 
 .img-web {
@@ -170,20 +110,14 @@ figure{
 }
 
 figcaption{
-    margin: auto;
-    background-color: #d3cbbc;
     width: 709px;
-    height: 166px;
-    position: relative;
     margin-top: -76px;
 }
 
 figcaption p{
-    margin: auto;
     padding: 18px;
     width: 620px;
     font-size: 19px;
-    font-weight: lighter;
 }
 
 figure > div {
@@ -191,26 +125,15 @@ figure > div {
     margin: auto;
 }
 
-.img-col-1{
-    display: inline-block;
-}
-
 .img-col-2{
-    display: inline-block;
     width: 380px;
 }
 
 /****** HOME ABOUT ******/
 
 /****** HOME WHAT TO DO ******/
-.home-what-to-do h2 {
-    text-align: center;
-    padding-top: 40px;
-    font-size: 30px;
-}
 
 .home-what-to-do p {
-    text-align: center;
     padding-top: 20px;
 }
 
@@ -221,21 +144,11 @@ figure > div {
 }
 
 .wtd-container p {
-    text-align: center;
     padding-bottom: 20px;
 }
 
 #ant {
     background: no-repeat url(imagenes/Home/home-chevron-izq.png);
-    font-size: 0px;
-    height: 30px;
-    width: 30px;
-    display: inline-block;
-}
-
-#img-container {
-    display: inline-block;
-    vertical-align: middle;
 }
 
 #img-container-mobile {
@@ -258,11 +171,6 @@ figure > div {
 .home-events {
     background-color: #dcdcdc;
     padding: 50px;
-}
-
-.home-events h2 {
-    text-align: center;
-    padding-bottom: 30px;
 }
 
 .home-events > div {
@@ -301,16 +209,11 @@ figure > div {
 }
 
 .home-events-col {
-    height: 60px;
-    display: inline-block;
     margin-left: 200px;
 }
 .home-events-col-2 {
     height: 40px;
-    display: inline-block;
-    border-left: 1px solid #062048;
     vertical-align: top;
-    text-align: left;
     padding: 15px;
     width: 300px;
 }
@@ -321,7 +224,6 @@ figure > div {
 }
 
 .ver-mas {
-    font-size: 0px;
     width: 30px;
     height: 40px;
     margin-bottom: 15px;
@@ -330,7 +232,6 @@ figure > div {
 }
 
 .ver-mas a {
-    display: inline-block;
     width: 30px;
     height: 40px;   
      background: no-repeat url(imagenes/Home/home-chevron-icon.png);
@@ -342,25 +243,11 @@ figure > div {
 /***************************** HOME *****************************/
 
 /***************************** ITINERARIO *****************************/
+
 #itinerario{
     width: 1200px;
     height: 539px;
     background-image: url(imagenes/Itinerario/itinerario_01.jpg);
-}
-
-.nav-itinerario-list {
-    display: none;
-    list-style: none;
-}
-
-button {
-    width: 200px;
-    text-decoration: none;
-    font-family: helvetica;
-    font-size: 15px;
-    border-radius: 2px;
-    padding: 5px;
-    border: 0px;
 }
 
 .intro {
@@ -378,12 +265,6 @@ button {
 .card-content {
     width: 960px;
     height: 500px;
-    padding-top: 30px;
-    margin: auto;    
-}
-
-.itinerario .row-1 {
-    background-color: rgba(238, 246, 251, 0.7);
 }
 
 .img-text {
@@ -398,8 +279,6 @@ button {
     width: 300px;
     font-size: 20px;
     margin: 65px -130px;
-    padding: 10px;
-    background-color: #3b6c90;
 }
 
 .img-text p, #lang {
@@ -410,16 +289,9 @@ button {
     font-size: 15px;
 }
 
-#lang-right {
-    font-size: 15px;
-    color: #062048;
-}
-
 #augusts h3{
-    text-align: center;
     font-size: 25px;
     font-weight: bold;
-    color: white;
     padding: 10px;
 }
 
@@ -427,9 +299,6 @@ button {
     width: 300px;
     height: 300px;
     margin: 65px 0px;
-    font-size: 15px;
-    padding: 10px;
-    background-color:#dcdcdc;
     position: absolute;
 }
 
@@ -489,83 +358,30 @@ ol {
 }
 
 .events-section h2 {
-    text-align: center;
     padding-top: 40px;
-    font-size: 30px;
 }
 
 .events-row {
     width: 900px;
-    margin: auto;
     padding: 20px;
 }
 
-.card-event {
-    width: 380px;
-    height: 320px;
-    border-radius: 1px;
-    margin: 20px;
-    box-shadow: 5px 5px 5px 5px rgba(205, 204, 205, 0.5);
-    display: inline-block !important;
-    vertical-align: top;
-}
-.card-event p {
-    display: none;
-    width: 220px;
-    height: 220px;
-    margin: auto;
-    padding-bottom: 20px;
-}
-
-.eventos-img-content {
-    margin: auto;
-    width: 260px;
-}
-
-.card-event h3 {
-    font-size: 20px;
-    font-style: italic;
-    text-align: center;
-    padding: 20px
-}
-
-.card-event a {
-    float: right;
-    padding: 20px;
-}
-
-.button, .eventos-reserva {
-    background-color: #eef6fb;
-    float: right;
-    border-radius: 2px;
-    border: none;
-    margin: 10px;
-    padding: 5px;
-    transition-duration: 0.4s;
-  }
-  
-  .button:hover{
+.button:hover{
     background-color: #062048; 
     color: #eef6fb;
   }
 
-  .eventos-reserva:hover{
+.eventos-reserva:hover{
     background-color: #eef6fb;
     color: #062048;
   }
 
-  .eventos-reserva {
+.eventos-reserva {
     float: right;
     background-color: #062048; 
     color: #eef6fb;
     padding: 5px;
     margin: 20px;
-  }
-
-  article h3 {
-      padding: 30px;
-      font-size: 20px;
-      text-align: center;
   }
 
 /***************************** EVENTOS *****************************/
@@ -577,23 +393,14 @@ ol {
     width: 1200px;
 }
 
-#reservas {
-    text-align: center;
-    padding-bottom: 20px;
-}
-
 form {
     width: 960px;
     height: 720px;
-    margin: auto;
 }
 
 .form-container {
     padding: 50px;
     width: 500px;
-    box-shadow: 5px 5px 5px 5px rgba(205, 204, 205, 0.5);
-    background-color: #eef6fb;
-    margin: auto;
 }
 
 .form-item {
@@ -603,7 +410,6 @@ form {
 }
 
 .form-item label {
-    display: inline-block;
     width: 250px;
 }
 
@@ -622,18 +428,6 @@ form {
 
 .thanks div {
     width: 1200px;
-    margin: auto;
-    padding: 150px 0px;
-    background-color: #eef6fb;
 }
 
-.thanks h2{
-    text-transform: uppercase;
-    font-size: 30px;
-}
-
-.thanks p {
-    font-size: 20px;
-    padding: 10px;
-}
 /***************************** THANKS *****************************/
