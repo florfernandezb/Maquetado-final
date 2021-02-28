@@ -495,18 +495,17 @@ ol {
 }
 
 .events-row {
-    width: 888px;
-    margin: auto;
+    width: 845px;
     padding: 20px;
+    margin: auto;
+    display: flex;
 }
 
 .card-event {
     width: 380px;
-    height: 320px;
     border-radius: 1px;
     margin: 20px;
     box-shadow: 5px 5px 5px 5px rgba(205, 204, 205, 0.5);
-    display: inline-block !important;
     vertical-align: top;
 }
 .card-event p {
