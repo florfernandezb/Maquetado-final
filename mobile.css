@@ -605,7 +605,7 @@ form {
     width: 150px;
 }
 
-#radio-button {
+.radio-button {
     width: 60px;
     vertical-align: top;
     margin: 20px;
