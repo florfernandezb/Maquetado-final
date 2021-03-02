@@ -219,6 +219,7 @@ figcaption{
     height: 175px;
     position: relative;
     margin-top: -50px;
+    padding: 10px;
 }
 
 figcaption p{
