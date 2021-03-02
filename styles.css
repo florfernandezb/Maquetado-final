@@ -23,7 +23,7 @@ a{
     text-decoration: none;
 }
 
-a:hover, .selected {
+footer a:hover, .selected {
     filter: hue-rotate(700deg) saturate(600%);
 }
 
@@ -394,7 +394,7 @@ button {
 }
 
 .content-right {
-    height: 300px;
+    height: 65%;
     width: 300px;
     font-size: 20px;
     margin: 65px -130px;
@@ -511,7 +511,7 @@ ol {
 .card-event p {
     display: none;
     width: 220px;
-    height: 220px;
+    height: 45%;
     margin: auto;
     padding-bottom: 20px;
 }
@@ -541,31 +541,35 @@ ol {
     margin: 10px;
     padding: 5px;
     transition-duration: 0.4s;
-  }
-  
-  .button:hover{
-    background-color: #062048; 
-    color: #eef6fb;
-  }
+}
 
-  .eventos-reserva:hover{
-    background-color: #eef6fb;
-    color: #062048;
-  }
+.easy-nav:hover{
+background-color: #062048; 
+color: #eef6fb;
+}
 
-  .eventos-reserva {
-    float: right;
-    background-color: #062048; 
-    color: #eef6fb;
-    padding: 5px;
-    margin: 20px;
-  }
+.eventos-reserva:hover{
+background-color: #eef6fb;
+color: #062048;
+}
 
-  article h3 {
-      padding: 30px;
-      font-size: 20px;
-      text-align: center;
-  }
+.eventos-reserva {
+float: right;
+background-color: #062048; 
+color: #eef6fb;
+padding: 5px;
+margin: 20px;
+}
+
+article h3 {
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+article {
+    margin-top: 60px;
+}
 
 /***************************** EVENTOS *****************************/
 
@@ -607,7 +611,11 @@ form {
 }
 
 .radio-button {
-    width: 75px;
+    width: 74px !important;
+}
+
+fieldset {
+    width: 400px;
 }
 
 /***************************** RESERVAS *****************************/

@@ -216,7 +216,7 @@ figcaption{
     margin: auto;
     background-color: #d3cbbc;
     width: 350px;
-    height: 166px;
+    height: 175px;
     position: relative;
     margin-top: -50px;
 }
@@ -473,14 +473,14 @@ button {
 }
 
 #volki {
-    height: 180px;
+    height: 195px;
 }
 
 #thomas, #opera {
     background-color: #d3cbbc;
     font-size: 15px;
     width: 400px;
-    height: 200px;
+    height: 210px;
     position: relative;
     margin-top: -20px;
 }
@@ -522,7 +522,7 @@ button {
 .card-event p {
     display: none;
     width: 220px;
-    height: 220px;
+    height: 45%;
     margin: auto;
     padding-bottom: 20px;
 }
@@ -606,7 +606,7 @@ form {
 }
 
 .radio-button {
-    width: 60px;
+    width: 60px !important;
     vertical-align: top;
     margin: 20px;
 }
@@ -614,6 +614,10 @@ form {
 #upload {
     vertical-align: top;
     width: 200px;
+}
+
+select {
+    vertical-align: top;
 }
 
 /***************************** RESERVAS *****************************/
