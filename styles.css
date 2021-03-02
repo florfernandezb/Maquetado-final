@@ -543,10 +543,11 @@ ol {
     transition-duration: 0.4s;
 }
 
-.easy-nav:hover{
+.easy-nav:hover, button:hover{
 background-color: #062048; 
 color: #eef6fb;
 }
+
 
 .eventos-reserva:hover{
 background-color: #eef6fb;
